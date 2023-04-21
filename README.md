@@ -7,6 +7,8 @@ A lightweight and user-friendly library for implementing horizontal scrolling on
 ```sh
 npm install @cloudparker/easy-horizontal-scroller-svelte --save-dev
 ```
+# Screenshot
+<img src="https://raw.githubusercontent.com/paramanandapradhan/easy-horizontal-scroller-svelte/main/static/easy-horizontal-scroller-svelte.webp" width="340">
 
 # Usage
 
@@ -17,7 +19,7 @@ npm install @cloudparker/easy-horizontal-scroller-svelte --save-dev
 
 <EasyHorizontalScroller height="136px">
 	{#each Array(100) as _, index}
-		<div class="item">{index}</div>
+		<div class="item" on:click={()=> console.log("clicked")}>{index}</div>
 	{/each}
 </EasyHorizontalScroller>
 
@@ -37,4 +39,12 @@ npm install @cloudparker/easy-horizontal-scroller-svelte --save-dev
 ```
 
 # Props
+
+### height:string
+
+_Required_
+
+Height of the scroller e.g `136px`
+
+
  

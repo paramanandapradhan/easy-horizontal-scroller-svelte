@@ -3,8 +3,8 @@
 </script>
 
 <EasyHorizontalScroller height="136px">
-	{#each Array(100) as _, index}
-		<div class="item">{index}</div>
+	{#each Array(500) as _, index}
+		<div class="item" on:click={()=> console.log("clicked")}>{index}</div>
 	{/each}
 </EasyHorizontalScroller>
 
